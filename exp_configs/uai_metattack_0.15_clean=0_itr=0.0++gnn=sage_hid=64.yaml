@@ -1,0 +1,50 @@
+tr:
+  max_epochs: 500
+  device: 0
+  patience: 400
+dt:
+  root: data
+  atk_root: atk_data
+  data: uai
+  attack_method: metattack
+  ptb_budget: 0.15
+  setting: nettack
+  lamb: 0.0
+  load_clean: 0
+  loader: full
+  load2device: 0
+  inductive_test_rate: 0.0
+  transform: ''
+md:
+  lr_s: 0.001
+  lr_t: 0.0012000000000000001
+  wd_s: 0.0009800000000000002
+  wd_t: 0.0017000000000000001
+  dropout_s: 0.8
+  dropout_t: 0.0
+  T_s: 8.9
+  T_t: 1.53
+  eta_min_s: 4.0e-05
+  eta_min_t: 0.0006000000000000001
+  lambda_aim_s: 1.0
+  lambda_aim_t: 1.0
+  lambda_kd_logit_s: 0.6
+  lambda_kd_logit_t: 1.3000000000000003
+  period: 50
+  mlp_type: MLP
+  hid: 64
+  hid_sX: 5
+  num_layer_s: 2
+  act_s: selu
+  act_t: selu
+  normalize_x: false
+log2disk: true
+ckpt2disk: true
+compile: false
+debug: false
+seed:
+- 15
+- 16
+- 17
+- 18
+- 19

@@ -1,0 +1,13 @@
+Dataset,#nodes,#edges,#node_features,#edge_features,#classes,undirected
+cora,2485,5069,1433,0,7,True
+citeseer,2110,3668,3703,0,6,True
+cora_ml,2810,7981,2879,0,7,True
+polblogs,1222,16714,1490,0,2,True
+pubmed,19717,44325,500,0,3,True
+acm,3025,13128,1870,0,3,True
+blogcatalog,5196,171743,8189,0,6,True
+uai,3067,28311,4973,0,19,True
+flickr,7575,239738,12047,0,9,True
+chameleon,2277,31371,2325,0,5,True
+texas,183,279,1703,0,5,True
+squirrel,5201,198353,128,0,5,True

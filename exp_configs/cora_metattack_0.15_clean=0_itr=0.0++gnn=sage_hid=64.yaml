@@ -1,0 +1,50 @@
+tr:
+  max_epochs: 500
+  device: 0
+  patience: 400
+dt:
+  root: data
+  atk_root: atk_data
+  data: cora
+  attack_method: metattack
+  ptb_budget: 0.15
+  setting: nettack
+  lamb: 0.0
+  load_clean: 0
+  loader: full
+  load2device: 0
+  inductive_test_rate: 0.0
+  transform: ''
+md:
+  lr_s: 0.017
+  lr_t: 0.0048000000000000004
+  wd_s: 0.00042
+  wd_t: 0.00136
+  dropout_s: 0.5
+  dropout_t: 0.0
+  T_s: 0.42000000000000004
+  T_t: 2.44
+  eta_min_s: 0.00048000000000000007
+  eta_min_t: 0.00027000000000000006
+  lambda_aim_s: 1.0
+  lambda_aim_t: 1.0
+  lambda_kd_logit_s: 5.6
+  lambda_kd_logit_t: 0.5
+  period: 30
+  mlp_type: MLP
+  hid: 64
+  hid_sX: 4
+  num_layer_s: 3
+  act_s: relu
+  act_t: relu
+  normalize_x: false
+log2disk: true
+ckpt2disk: true
+compile: false
+debug: false
+seed:
+- 15
+- 16
+- 17
+- 18
+- 19

@@ -1,0 +1,17 @@
+Dataset,#nodes,#edges,#node_features,#edge_features,#classes,undirected
+cora,2708,10556,1433,0,7,True
+citeseer,3327,9104,3703,0,6,True
+pubmed,19717,88648,500,0,3,True
+reddit,232965,114615892,602,0,41,True
+reddit2,232965,23213838,602,0,41,True
+ogbn-arxiv,169343,1166243,128,0,40,False
+ogbn-products,2449029,123718280,100,0,47,True
+a-computers,13752,491722,767,0,10,True
+a-photo,7650,238162,745,0,8,True
+amazon-computers,13752,491722,767,0,10,True
+amazon-photo,7650,238162,745,0,8,True
+chameleon,2277,36101,2325,0,5,False
+squirrel,5201,217073,2089,0,5,False
+cornell,183,298,1703,0,5,False
+texas,183,325,1703,0,5,False
+wisconsin,251,515,1703,0,5,False

@@ -1,0 +1,38 @@
+---
+dt:
+  root: The data root dir
+  atk_root: The pre-attacked data root dir
+  data: The dataset name
+  attack_method: metattack
+  ptb_budget: ptb_budget
+  setting: data split setting, by default as that in nettack and metattack papers
+  lamb: The lambda argument of metattack. by default 0.0
+  loader: load the full graph if `full`; batch sampling if `neighbor`
+  load2device: load the entire graph to GPU before training
+  inductive_test_rate: The percent of inductive test nodes. 0 for transductive task, 0.2 for production task
+  normalize_x: If True, row-normalizes the attributes given in attrs to sum-up to 1.
+tr:
+  device: The GPU device marker valid to Lightning Trainer
+  max_epochs: The training epochs
+  patience: The patience of early stopping
+md:
+  lr_s: The learning rate of MLP
+  lr_t: The learning rate of GNN
+  wd_s: The weight decay of MLP
+  wd_t: The weight decay of GNN
+  T_s: The logit temperature of MLP
+  T_t: The logit temperature of GNN
+  eta_min_s: The MLP lr lower bound of annealing
+  eta_min_t: The GNN lr lower bound of annealing
+  lambda_aim_s: The cross entropy loss weight of MLP
+  lambda_aim_t: The cross entropy loss weight of GNN
+  period: The number epochs in a minimal annealing period
+  mlp_type: Naive MLP or JKMLP with a highway from all hidden outputs to the final layer
+  hid: The hidden size of GNN
+  hid_sX: = The MLP hid dim / GNN hid dim
+  num_layer_s: The depth of MLP
+  dropout_s: The dropout ratio of MLP
+  dropout_t: The dropout ratio of GNN
+  act_s: The activation function of MLP
+  act_t: The activation function of GNN
+
